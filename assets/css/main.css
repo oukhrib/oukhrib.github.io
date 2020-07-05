@@ -1,0 +1,204 @@
+body{margin: 0;color: white;font-family: arial;text-transform: uppercase;}
+ul{list-style: none;padding: 0;margin: 0;}
+.app{display: flex;}
+.container{flex: 1;display: flex;}
+.header{position: relative;display: flex;background-image: url(/assets/images/background.jpg);background-size: cover;background-position: center center;flex: 1;}
+.header-container{flex: 1;background-color: #000000d4;height: 100vh;display: flex;flex-direction: column;padding: 4rem;box-sizing: border-box;}
+.navbar{display: flex;justify-content: space-between;padding: 1rem;align-items: center;flex-wrap: wrap;position: sticky;top: 0;z-index: 2;}
+.navbar.scrolled{
+    background-color: #080510b0;
+    border-bottom: 1px solid #FFC107;
+}
+.navbar .logo{display: flex;align-items: center;color: #ffffff;text-decoration: none;opacity: 0.8;white-space: nowrap;}
+.navbar .logo:hover{opacity:1}
+.navbar .logo img{height: 35px;margin-right: 10px;}
+.navbar .logo h1{margin: 0;}
+.navbar .menu{}
+.navbar .menu ul{display: flex;}
+.navbar .menu ul li{
+
+}
+.navbar .menu ul li a{color: white;margin-right: 1rem;text-decoration: none;opacity: 0.7;}
+.navbar .menu ul li a.active, .navbar .menu ul li a:hover{
+    opacity: 1;
+    color: #FFC107;
+    border-bottom: 4px solid;
+}
+.slider{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    padding: 0 1rem;
+}
+.slider .bg-elements{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider .bg-elements .dev{font-size: 3rem;color: #ffffff;position: absolute;right: 30px;top: 0;animation: updown 5s linear infinite;opacity: .1;}
+.slider .content .social-media{display: flex;align-items: center;position: fixed;left: 15px;top: 50%;transform: translateY(-50%);}
+.slider .content .social-media ul{display: flex;flex-direction: column;}
+.slider .content .social-media ul li{margin-bottom: 10px;}
+.slider .content .social-media ul li a{display: flex;width: 30px;height: 30px;justify-content: center;opacity: .8;border-radius: 5px;}
+.slider .content .social-media ul li a:hover{
+    opacity: 1;
+    animation: rotatelr .3s linear;
+}
+.slider .content{position: relative;max-width: 1200px;margin: auto;height: 100%;display: flex;justify-content: center;}
+
+.slider .content .image{display: flex;justify-content: center;align-items: center;position: relative;}
+.slider .content .image .profile{
+    width: 400px;padding: 4rem;
+    animation: updown 5s linear infinite;
+}
+.slider .content .image .langs{
+    position: absolute;
+}
+.slider .content .image .lang{
+    position: absolute;
+    max-width: 200px;
+    height: auto;
+    background-color: #00000069;
+    padding: 18px;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    opacity: 0.7;
+    animation: updown 2s linear infinite;
+}
+.slider .content .image .lang.vue-js{
+    right: 20px;
+    top: -300px;
+    width: 70px;
+}
+.slider .content .image .lang.node-js{
+    left: 93px;
+    top: -90px;
+    width: 50px;
+}
+.slider .content .image .lang.laravel{
+    left: 90px;
+    top: 190px;
+    width: 70px;
+}
+.slider .content .data{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.slider .content .data .title{
+    margin: 0;
+    font-size: 4rem;
+    color: #FFC107;
+}
+.slider .content .data .sub-title{margin: 0;font-size: 2rem;opacity: .8;color: #e5ffb0;}
+.slider .content .data .sub-title .slash{
+    color: #ffffff;
+    opacity: .5;
+}
+.slider .content .data .sub-title .front{
+    color: #c6f9ff;
+}
+.slider .content .data .description{opacity: .7;}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .slider .content .data .title {
+        font-size: 3rem;
+    }
+    .slider .content .data .sub-title {
+        font-size: 1.5rem;
+    }
+    .slider .content .image .profile{
+        width: 250px;
+        padding: 4rem 0;
+    }
+    .slider .content .image .lang.vue-js {
+        right: 20px;
+        top: -210px;
+        width: 44px;
+    }
+    .image .lang.node-js {
+        left: 135px;
+        top: -90px;
+        width: 70px;
+    }
+    .slider .content .image .lang.laravel {
+        left: 50px;
+        top: 130px;
+        width: 52px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    
+    
+    .navbar .menu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .navbar .logo{
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .header-container{
+        height: auto;
+        padding: 0;
+    }
+    .slider .content{
+        flex-wrap: wrap;
+    }
+    .slider .content .data{
+        padding: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}
+
+
+@keyframes updown{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    10%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes rotatelr{
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(20deg);
+    }
+    80%{
+        transform: rotate(-20deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
