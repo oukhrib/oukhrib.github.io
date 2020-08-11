@@ -72,19 +72,19 @@ ul{list-style: none;padding: 0;margin: 0;}
     animation: updown 2s linear infinite;
 }
 .slider .content .image .lang.vue-js{
-    right: 50px;
-    top: 0;
-    width: 50px;
+    right: 75px;
+    top: 17px;
+    width: 60px;
 }
 .slider .content .image .lang.node-js{
-    left: 93px;
-    top: 20px;
+    left: 50px;
+    top: 80px;
     width: 50px;
 }
 .slider .content .image .lang.laravel{
-    right: 100px;
+    right: 35px;
     bottom: 0;
-    height: 35px;
+    height: 48px;
 }
 .slider .content .data{
     justify-content: center;
