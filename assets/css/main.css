@@ -4,7 +4,7 @@ ul{list-style: none;padding: 0;margin: 0;}
 .container{flex: 1;display: flex;}
 .header{position: relative;display: flex;background-image: url(/assets/images/background.jpg);background-size: cover;background-position: center center;flex: 1;}
 .header-container{flex: 1;background-color: #000000d4;height: 100vh;display: flex;flex-direction: column;padding: 4rem;box-sizing: border-box;}
-.navbar{display: flex;justify-content: space-between;padding: 1rem;align-items: center;flex-wrap: wrap;position: sticky;top: 0;z-index: 2;}
+.navbar{display: flex;justify-content: space-between;padding: 1rem;align-items: center;flex-wrap: wrap;position: sticky;top: 0;z-index: -1;}
 .navbar.scrolled{
     background-color: #080510b0;
     border-bottom: 1px solid #FFC107;
@@ -44,15 +44,21 @@ ul{list-style: none;padding: 0;margin: 0;}
     opacity: 1;
     animation: rotatelr .3s linear;
 }
-.slider .content{position: relative;max-width: 1200px;margin: auto;height: 100%;display: flex;justify-content: center;}
+.slider .content{position: relative;max-width: 1200px;margin: auto;height: 100%;display: flex;justify-content: center;padding: 3rem 0;box-sizing: border-box;}
 
 .slider .content .image{display: flex;justify-content: center;align-items: center;position: relative;}
 .slider .content .image .profile{
-    width: 400px;padding: 4rem;
+    padding: 4rem;
     animation: updown 5s linear infinite;
+    max-width: 400px;
+    max-height: 100%;
 }
 .slider .content .image .langs{
     position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 .slider .content .image .lang{
     position: absolute;
@@ -66,19 +72,19 @@ ul{list-style: none;padding: 0;margin: 0;}
     animation: updown 2s linear infinite;
 }
 .slider .content .image .lang.vue-js{
-    right: 20px;
-    top: -300px;
-    width: 70px;
+    right: 50px;
+    top: 0;
+    width: 50px;
 }
 .slider .content .image .lang.node-js{
     left: 93px;
-    top: -90px;
+    top: 20px;
     width: 50px;
 }
 .slider .content .image .lang.laravel{
-    left: 90px;
-    top: 190px;
-    width: 70px;
+    right: 100px;
+    bottom: 0;
+    height: 35px;
 }
 .slider .content .data{
     justify-content: center;
