@@ -52,6 +52,8 @@ ul{list-style: none;padding: 0;margin: 0;}
     animation: updown 5s linear infinite;
     max-width: 400px;
     max-height: 100%;
+    position: relative;
+    z-index: 9;
 }
 .slider .content .image .langs{
     position: absolute;
@@ -59,6 +61,9 @@ ul{list-style: none;padding: 0;margin: 0;}
     left: 0;
     right: 0;
     bottom: 0;
+}
+.slider .content .image .langs.top{
+    z-index: 10;
 }
 .slider .content .image .lang{
     position: absolute;
@@ -72,19 +77,31 @@ ul{list-style: none;padding: 0;margin: 0;}
     animation: updown 2s linear infinite;
 }
 .slider .content .image .lang.vue-js{
-    right: 75px;
-    top: 17px;
-    width: 60px;
-}
-.slider .content .image .lang.node-js{
-    left: 50px;
-    top: 80px;
+    right: 50px;
+    top: 0;
     width: 50px;
 }
+.slider .content .image .lang.node-js{
+    left: 93px;
+    top: 20px;
+    width: 50px;
+}
+.slider .content .image .lang.php{
+    left: 0px;
+    bottom: 80px;
+    width: 100px;
+    border: 0;
+}
+.slider .content .image .lang.symfony{
+    left: 136px;
+    bottom: 5px;
+    width: 86px;
+    padding: 5px;
+}
 .slider .content .image .lang.laravel{
-    right: 35px;
+    right: 100px;
     bottom: 0;
-    height: 48px;
+    height: 35px;
 }
 .slider .content .data{
     justify-content: center;
@@ -120,9 +137,9 @@ ul{list-style: none;padding: 0;margin: 0;}
         padding: 4rem 0;
     }
     .slider .content .image .lang.vue-js {
-        right: 20px;
-        top: -210px;
-        width: 44px;
+        right: -30px;
+        top: 163px;
+        width: 48px;
     }
     .image .lang.node-js {
         left: 135px;
@@ -130,9 +147,21 @@ ul{list-style: none;padding: 0;margin: 0;}
         width: 70px;
     }
     .slider .content .image .lang.laravel {
-        left: 50px;
-        top: 130px;
-        width: 52px;
+        bottom: 10px;
+        width: 42px;
+        left: 50%;
+    }
+    .slider .content .image .lang.php{
+        left: -52px;
+        top: 50px;
+        width: 72px;
+        border: 0;
+    }
+    .slider .content .image .lang.symfony{
+        left: 0px;
+        bottom: 0px;
+        width: 60px;
+        padding: 5px;
     }
 }
 
