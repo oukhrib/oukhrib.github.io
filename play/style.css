@@ -1,0 +1,68 @@
+#Screen,#Obj,.Results,#Floor,img{
+	position: fixed;
+}
+body{
+	margin: 0;
+}
+#Screen{
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-image: url("BG.png");
+	background-repeat: repeat-x;
+	background-position: bottom;
+	background-color: aliceblue;
+}
+#Obj{
+	width: 60px;
+	height: 90px;
+	bottom: 45px;
+	left: 50px;
+	transition: .2s;
+}
+.Results{
+	right: 0;
+}
+.Results b{
+	display:block;
+	padding: 5px;
+	margin: 1px;
+	color: white;
+}
+#Points{
+	background-color:#2196F3;
+}
+#Errors{
+	background-color:#F44336;
+}
+#Warnings{
+	background-color:#FF9800;
+}
+#Floor{
+	bottom:0;
+	left:0;
+	right:0;
+	height:50px;
+	background-color:#004b6b;
+}
+img{
+	/*border: 1px red solid;*/
+}
+.MSG{
+	text-align:center;
+	position:fixed;
+	width:100%;
+	top:50px;
+}
+#Message{
+	background-color:#03A9F4;
+	color:white;
+	display:inline-block;
+	padding:15px 20px;
+	border-radius:20px;
+	font-size:x-large;
+	font-weight:bold;
+	opacity:0;
+	transition:1s;
+}
