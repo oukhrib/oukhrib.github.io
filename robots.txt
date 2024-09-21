@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Disallow: /cdn-cgi
+Disallow: /cdn-cgi/
+Disallow: /cdn-cgi/*
